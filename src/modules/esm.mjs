@@ -4,7 +4,7 @@ import { createServer as createServerHttp } from "http";
 import { readFile } from "fs/promises";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import "./files/c.json";
+import "./files/c.js";
 
 const loadJSON = async (path) =>
   JSON.parse(await readFile(new URL(path, import.meta.url)));
